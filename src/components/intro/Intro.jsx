@@ -16,7 +16,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/persona.png" />
+          <img src="assets/image.svg" />
         </div>
       </div>
       <div className="right">
@@ -30,7 +30,10 @@ export default function Intro() {
             <Button
               variant="contained"
               color="primary"
-              className="button">
+              className="button"
+              href="cv/CV_ROGELDARWIN.pdf"
+              key="download"
+            >
               Descargar CV
             </Button>
           </div>
@@ -38,7 +41,10 @@ export default function Intro() {
             <a href="https://twitter.com/darogel96" className="imagenT">
               <img src="assets/twitter.png" className="imagent" />
             </a>
-            <a href="https://www.linkedin.com/in/darwin-alexander-rogel-rivera-9243021ab/" className="imagenL">
+            <a
+              href="https://www.linkedin.com/in/darwin-alexander-rogel-rivera-9243021ab/"
+              className="imagenL"
+            >
               <img src="assets/linkedin.png" className="imagenl" />
             </a>
             <a href="https://github.com/Darogel" className="imagenG">

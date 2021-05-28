@@ -8,8 +8,19 @@ import {
   desktopPortfolio,
 } from "../../data";
 import Button from "@material-ui/core/Button";
+import { init } from "ityped";
+import { useRef } from "react";
 
 export default function Portfolio() {
+  const textRef = useRef();
+  useEffect(() => {
+    init(textRef.current, {
+      backDelay: 1500,
+      backSpeed: 60,
+      showCursor: true,
+      strings: ["Proyectos"],
+    });
+  }, []);
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
   const list = [
@@ -50,7 +61,7 @@ export default function Portfolio() {
   }, [selected]);
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Proyectos</h1>
+      <h1><span ref={textRef}></span></h1>
       <ul>
         {list.map((item) => (
           <PortfolioList

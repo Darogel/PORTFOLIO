@@ -14,9 +14,6 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         <li  onClick={() => setMenuOpen(false)}>
           <Code className="icon"/><a href="#portfolio">Proyectos</a>
         </li>
-        <li  onClick={() => setMenuOpen(false)}>
-          <ContactMail className="icon"/><a href="#contact">Contacto</a>
-        </li>
       </ul>
     </div>
   );

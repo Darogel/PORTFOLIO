@@ -1,3 +1,97 @@
-.about{
-    background-color: lightgreen;
+@import "../../global.scss";
+.about {
+  background-color: white;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    position: relative;
+    .wrapper {
+      width: 90%;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: justify;
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+        span{
+            color: crimson;
+        }
+
+      }
+      .textO {
+        padding: 10px;
+        font-size: 15px;
+      }
+      .textT {
+        padding: 10px;
+        font-size: 15px;
+      }
+      .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .item {
+          width: 100px;
+          height: 100px;
+          border-radius: 20px;
+          border: 1px solid rgb(240, 239, 239);
+          margin: 10px 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          position: relative;
+          transition: all 0.5s ease;
+
+          h3 {
+            position: absolute;
+            font-size: 20px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+          }
+
+          &:hover {
+            background-color: $mainColor;
+            img {
+              opacity: 0.2;
+              z-index: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    overflow: hidden;
+
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+      background-color: crimson;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      float: left;
+
+      img {
+        width: 90%;
+      }
+    }
+  }
 }
