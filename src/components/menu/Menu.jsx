@@ -1,20 +1,21 @@
 import "./menu.scss";
+import { Home, RecentActors, ContactMail, Code} from "@material-ui/icons";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
     <div className={"menu " + (menuOpen && "active")}>
       <ul>
         <li  onClick={() => setMenuOpen(false)}>
-          <a href="#intro">Inicio</a>
+          <Home className="icon" /><a href="#intro">Inicio</a>
         </li>
         <li  onClick={() => setMenuOpen(false)}>
-          <a href="#about">Sobre Mí</a>
+          <RecentActors className="icon" /><a href="#about">Sobre Mí</a>
         </li>
         <li  onClick={() => setMenuOpen(false)}>
-          <a href="#portfolio">Proyectos</a>
+          <Code className="icon"/><a href="#portfolio">Proyectos</a>
         </li>
         <li  onClick={() => setMenuOpen(false)}>
-          <a href="#contact">Contacto</a>
+          <ContactMail className="icon"/><a href="#contact">Contacto</a>
         </li>
       </ul>
     </div>
