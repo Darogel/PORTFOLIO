@@ -1,31 +1,132 @@
-.intro{
-    background-color: white;
-    display: flex;
+.intro {
+  background-color: white;
+  display: flex;
 
-    .left{
-        flex: 0.5;
-        overflow: hidden;
+  .left {
+    flex: 0.5;
+    overflow: hidden;
 
-        .imgContainer{
-            width: 700px;
-            height: 700px;
-            background-color: crimson;
-            border-radius: 50%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            float: right;
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+      background-color: crimson;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
 
-            img{
-                width: 90%;
+      img {
+        width: 90%;
+      }
+    }
+  }
 
-            }
+  .right {
+    flex: 0.5;
+    position: relative;
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+      }
+      h2 {
+        font-size: 35px;
+      }
+      h3 {
+        font-size: 30px;
+
+        span {
+          font-size: inherit;
+          color: crimson;
         }
 
-    }
+        .ityped-cursor {
+          animation: blink 1s infinite;
+        }
 
-    .right{
-        flex: 0.5;
+        @keyframes blink {
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+      .curriculum{
+          display: flex;
+          align-items: center;
+          padding: 30px;
+  
+          Button {
+            font-size: 18px;
+            border-radius: 10px;
+          }
+  
+      }
+      .imagenRedes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        .imagenT {
+          position: relative;
+          justify-content: center;
+          padding: 50px;
+          .imagent {
+            width: 40px;
+          }
+          &:hover {
+            color : lightskyblue;
+          }
+        }
+
+        .imagenL {
+          position: relative;
+          justify-content: center;
+          padding: 50px;
+          .imagenl {
+            width: 40px;
+          }
+          &:hover {
+            font-weight: 500;
+          }
+        }
+        .imagenG {
+          position: relative;
+          justify-content: center;
+          padding: 50px;
+          .imageng {
+            width: 40px;
+          }
+          &:hover {
+            font-weight: 500;
+          }
+        }
+      }
     }
+    .imagenD {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      .imagend {
+        width: 60px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
 }
