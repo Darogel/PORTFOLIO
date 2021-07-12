@@ -5,7 +5,7 @@ export const featuredPortfolio = [
         title: "Dart, Flutter",
         dir:"https://github.com/Darogel/Dart_Flutter",
         desc: "Aplicación móvil que simula las Funcionalidades de WhatsApp de una manera básica, ideal para empezar con la Programación en Dart.",
-        tag:"BACKEND"
+        tag:""
 
     },
     {
